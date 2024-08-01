@@ -4,7 +4,7 @@ import { join } from 'path'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const binding = nodeGypBuild(join(__dirname, './')) as any
-
+console.log('binding', binding)
 export const asyncClose = binding.close ? promisify(binding.close) : async () => { throw new Error('"binding.close" Method not implemented')}
 export const asyncDrain = binding.drain ? promisify(binding.drain) : async () => { throw new Error('"binding.drain" Method not implemented')}
 export const asyncFlush = binding.flush ? promisify(binding.flush) : async () => { throw new Error('"binding.flush" Method not implemented')}
