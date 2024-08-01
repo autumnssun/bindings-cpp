@@ -5,6 +5,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "keywords": [
+    "raspberry pi",
     "serialport-binding",
     "COM",
     "com port",
